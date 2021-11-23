@@ -1,16 +1,22 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* MEDIDA DE LETRAS */
 h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   color: #fd1532;
-  font-family: "Creepster", cursive;
+  font-family: 'Creepster', cursive;
   font-size: 5rem;
   letter-spacing: 10px;
   text-align: center;
@@ -25,6 +31,7 @@ h1 {
           animation-iteration-count: infinite;
   text-shadow: 5px 5px 5px #bbff00;
 }
+
 @-webkit-keyframes aparecer {
   0% {
     opacity: 0;
@@ -33,6 +40,7 @@ h1 {
     opacity: 1;
   }
 }
+
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -44,14 +52,14 @@ h1 {
 
 h2 {
   color: #fd1532;
-  font-family: "Rampart One", cursive;
+  font-family: 'Rampart One', cursive;
   text-shadow: 5px 5px 5px #353535;
   text-align: center;
 }
 
 h3 {
   color: #006eff;
-  font-family: "Monoton", cursive;
+  font-family: 'Monoton', cursive;
   text-shadow: 5px 5px 5px #9e9797;
   text-align: center;
   margin-top: 10%;
@@ -59,64 +67,96 @@ h3 {
 
 /* HEADER */
 a {
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Press Start 2P', cursive;
   text-decoration: none;
   color: black;
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-image: -webkit-gradient(linear, right top, left top, from(red), to(blue));
   background-image: linear-gradient(to left, red, blue);
   background-size: cover;
   background-position: center;
   width: auto;
   height: 100%;
 }
+
 header .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
   width: 100%;
 }
+
 header .menuH {
   width: 100%;
   height: 100%;
 }
+
 header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
   padding: 0 80px;
 }
+
 header ul {
   margin-right: 30px;
+  -webkit-transition: transform(1s), transform(1s);
+  transition: transform(1s), transform(1s);
   transition: transform(1s);
 }
+
 header ul :hover {
-  transform: translate(0.5em);
+  -webkit-transform: translate(0.5em);
+          transform: translate(0.5em);
 }
+
 header nav a:hover {
   color: green;
 }
+
 header ul li {
   position: relative;
   margin: 3%;
   margin-top: 10%;
 }
+
 header ul ul {
   position: absolute;
   color: white;
   display: none;
 }
+
 header ul ul li a {
   font-size: 1rem;
   color: white;
+  -webkit-transition: none;
   transition: none;
 }
+
 header ul li:hover ul {
   color: white;
   display: inline-block;
@@ -126,19 +166,28 @@ header ul li:hover ul {
   header {
     background-color: aqua;
   }
-
   .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     font-size: 3rem;
   }
 }
+
 /* CUERPO */
 body {
   background-color: black !important;
@@ -148,36 +197,65 @@ body {
 /* CUERPO HOME */
 .section__tituloTiendaHome {
   margin: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: black;
 }
+
 .section__tituloTiendaHome .section__tituloTiendaHome--color {
   color: white;
 }
+
 .section__tituloTiendaHome .proximamente {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   background-color: #000;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .section__tituloTiendaHome img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: 2s;
   transition: 2s;
 }
+
 .section__tituloTiendaHome img:hover {
-  transform: rotatey(160deg);
+  -webkit-transform: rotatey(160deg);
+          transform: rotatey(160deg);
 }
 
 .proximamente__cajasTienda {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5%;
   border: 5px solid red;
 }
+
 .proximamente__cajasTienda .videoH {
   width: 50%;
   height: 20em;
@@ -210,17 +288,23 @@ body {
 }
 
 .ofertas__home--card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   height: 95%;
   padding-bottom: 1rem;
 }
+
 .ofertas__home--card .card {
   width: 400px;
   text-align: center;
 }
+
 .ofertas__home--card .card .card-text {
   color: blue;
 }
@@ -229,6 +313,7 @@ body {
 .ofertas__home {
   background-color: blue;
 }
+
 .ofertas__home .cero {
   color: red;
   text-align: center;
@@ -237,9 +322,14 @@ body {
 /* fin condicionales ofertas */
 /* bucles */
 .bucles {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .bucle-1 {
@@ -248,11 +338,19 @@ body {
   background-color: #ab2e2e;
   text-align: center;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 20px;
 }
+
 .bucle-1 i {
   font-size: 30px;
 }
@@ -263,11 +361,19 @@ body {
   background-color: #cc4040;
   text-align: center;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 20px;
 }
+
 .bucle-2 i {
   font-size: 30px;
 }
@@ -278,11 +384,19 @@ body {
   background-color: #d76868;
   text-align: center;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 20px;
 }
+
 .bucle-3 i {
   font-size: 30px;
 }
@@ -347,48 +461,79 @@ body {
 /*pagina de Nintendo Switch*/
 @media only screen and (max-width: 800px) {
   h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     font-size: 1rem;
   }
-
   .portadaNw img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     width: 100%;
   }
 }
+
 .nintendoSwitchPortada {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   height: 100%;
 }
+
 .nintendoSwitchPortada h1 {
   margin: 1%;
 }
+
 .nintendoSwitchPortada img {
-  transform: rotatey(180deg);
+  -webkit-transform: rotatey(180deg);
+          transform: rotatey(180deg);
 }
+
 .nintendoSwitchPortada img:hover {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 
 .cardH {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 20%;
   text-align: center;
 }
+
 .cardH .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 5%;
 }
 
@@ -401,148 +546,235 @@ body {
 .fondoTiendaPs4 {
   background-color: black;
   padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .fondoTiendaPs4 .cardPs4 {
+  background-image: -webkit-gradient(linear, right top, left top, from(#a7a0a0), to(#242425));
   background-image: linear-gradient(to left, #a7a0a0, #242425);
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
 .galeriaPs4 {
   width: 100%;
   height: 100%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .galeriaPs4 .contenedorPs4 {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  -ms-grid-columns: 2fr 2fr 2fr;
+      grid-template-columns: 2fr 2fr 2fr;
   grid-auto-rows: 250px;
   padding: 10%;
   width: 100%;
   height: 100%;
   place-content: stretch;
 }
+
 .galeriaPs4 .contenedorPs4 .contenedorPs4__item {
   background-color: red;
   justify-items: center;
   min-width: 100%;
   min-height: 100%;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
+
 .galeriaPs4 .contenedorPs4 .contenedorPs4__item:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.7s;
   transition: 0.7s;
 }
+
 .galeriaPs4 .contenedorPs4 .contenedorPs4__item--item1 {
   background-image: url(./galeriaps4/streetfightergaleria.jpg);
   background-position: center;
   background-size: cover;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-column: 1/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
   grid-row: 1/2;
   height: 20rem;
 }
+
 .galeriaPs4 .contenedorPs4 .contenedorPs4__item--item2 {
   background-image: url(./galeriaps4/jumpforcegaleria.jpg);
   background-size: cover;
   background-position: center;
+  -ms-grid-column: 1;
   grid-column: 1;
+  -ms-grid-row: 2;
   grid-row: 2;
   grid-row-start: 2;
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 2;
 }
+
 .galeriaPs4 .contenedorPs4 .contenedorPs4__item--item3 {
   background-image: url(./galeriaps4/450_1000.jpg);
   background-size: cover;
   background-position: center;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   grid-row: 2/4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
   grid-column: 3/4;
 }
+
 .galeriaPs4 .contenedorPs4 .contenedorPs4__item--item4 {
   background-image: url(./galeriaps4/logoplay.png);
   background-position: center;
   background-size: cover;
+  -ms-grid-column: 2;
   grid-column: 2;
+  -ms-grid-row: 2;
   grid-row: 2;
 }
+
 .galeriaPs4 .contenedorPs4 .contenedorPs4__item--item5 {
   background-image: url(./galeriaps4/call.jpg);
   background-position: center;
   background-size: cover;
 }
+
 .galeriaPs4 .contenedorPs4 .contenedorPs4__item--item6 {
   background-image: url(./galeriaps4/farcryportada.webp);
   background-size: cover;
   background-position: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-column: 1/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
   grid-row: 4/5;
 }
 
 /*PAGINA PS5*/
 @media only screen and (max-width: 800px) {
   h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     font-size: 1rem;
   }
-
   .ps5Portada img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     width: 100%;
   }
-
   .contenidoPs5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
+
 .ps5Portada {
   background-color: black;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .fondoTiendaPs5 {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: black;
   padding-top: 10%;
 }
+
 .fondoTiendaPs5 .contenidoPs5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 5%;
 }
+
 .fondoTiendaPs5 .contenidoPs5 .carruselPs5 {
   margin: 10%;
+  background-image: -webkit-gradient(linear, right top, left top, from(#a7a0a0), to(#bad836));
   background-image: linear-gradient(to left, #a7a0a0, #bad836);
   text-align: center;
 }
 
 /*SECTOR DE FOOTER*/
 .iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: center;
+          flex-direction: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .iconos i {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: white;
   font-size: 3rem;
   padding: 5%;
@@ -550,10 +782,18 @@ body {
 }
 
 .contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-image: url(./imagen/fire11.jpg);
   background-size: cover;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-}/*# sourceMappingURL=estilo.css.map */
+}
+/*# sourceMappingURL=estilo.css.map */
