@@ -401,7 +401,8 @@ body {
   font-size: 30px;
 }
 
-.ps4-logo, .nw-logo {
+.ps4-logo,
+.nw-logo {
   height: 400px;
   width: 500px;
   border: 2px solid black;
@@ -795,5 +796,87 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
+}
+
+.contact_form input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #292728;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.contact_form textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+.contact_form label {
+  display: block;
+  float: center;
+}
+
+.contact_form button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #ff0000;
+  border-color: #d4a1a1;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+.contact_form button p {
+  color: #fff;
+}
+
+.contact_form span {
+  color: #020202;
+}
+
+.contact_form .aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+.contact_form h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+
+.contact_form p {
+  font-size: 14px;
+  color: #0e0e0e;
 }
 /*# sourceMappingURL=estilo.css.map */
