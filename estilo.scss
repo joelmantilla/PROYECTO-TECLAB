@@ -618,7 +618,6 @@ $color in $redes {
 
 
 .contact_form {
-
     width: auto;
     height: auto;
     margin: 80px auto;
@@ -626,11 +625,10 @@ $color in $redes {
     padding-top: 30px;
     padding-bottom: 20px;
     background-color: #fbfbfb;
-    padding-left: 30px;
 
     input {
         background-color: #fbfbfb;
-        width: 408px;
+        width: 15rem;
         height: 40px;
         border-radius: 5px;
         border-style: solid;
@@ -643,7 +641,7 @@ $color in $redes {
 
     textarea {
         background-color: #fbfbfb;
-        width: 405px;
+        width: 300px;
         height: 150px;
         border-radius: 5px;
         border-style: solid;
