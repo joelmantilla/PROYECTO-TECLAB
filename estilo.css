@@ -790,7 +790,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(./imagen/fire11.jpg);
+  background-image: -webkit-gradient(linear, right top, left top, from(red), to(blue));
+  background-image: linear-gradient(to left, red, blue);
   background-size: cover;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

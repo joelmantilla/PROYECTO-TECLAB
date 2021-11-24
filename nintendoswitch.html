@@ -132,24 +132,66 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.040227647603!2d-58.41302968505242!3d-34.60314426497418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8c854bd13f%3A0xfc0cf5c054da4aa1!2sAbasto%20Shopping!5e0!3m2!1ses-419!2sar!4v1634011161711!5m2!1ses-419!2sar"
                     width="100%" height="500rem" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            
-            <div class="itemFooter">
-                <main>
-                    <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
-                        <h2>contactanos</h2>
-                        nombre<input type="text" required> <br>
-                        email<input type=""> <br>
-                        edad<input type="number"> <br>
-                        fecha<input type="date"> <br>
-                        telefono<input type="text" required> <br>
-                        <textarea name="areadetexto" id="" cols="30" rows="10"
-                            placeholder="escribre tu comentario"></textarea>
-                        <br>
-                        <input type="submit" value="enviar"> <br>
-                        <input type="reset" value="borrar"> <br>
+            <div class="contact_form">
+
+                <div class="formulario">
+                    <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+                    <form action="submeter-formulario.php" method="post">
+
+
+                        <p>
+                            <label for="nombre" class="colocar_nombre">Nombre
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                                placeholder="Escribe tu nombre">
+                        </p>
+
+                        <p>
+                            <label for="email" class="colocar_email">Email
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio"
+                                placeholder="Escribe tu Email">
+                        </p>
+
+                        <p>
+                            <label for="telefone" class="colocar_telefono">Teléfono
+                            </label>
+                            <input type="tel" name="introducir_telefono" id="telefono"
+                                placeholder="Escribe tu teléfono">
+                        </p>
+
+                        <p>
+                            <label for="asunto" class="colocar_asunto">Asunto
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                                placeholder="Escribe un asunto">
+                        </p>
+
+                        <p>
+                            <label for="mensaje" class="colocar_mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
+                                required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                        </p>
+
+                        <button type="submit" name="enviar_formulario" id="enviar">
+                            <p>Enviar</p>
+                        </button>
+
+                        <p class="aviso">
+                            <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>
+
                     </form>
-                </main>
+                </div>
             </div>
+            
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
