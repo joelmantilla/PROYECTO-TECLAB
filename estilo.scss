@@ -6,6 +6,29 @@
 
 /* MEDIDA DE LETRAS */
 
+.btn-wsp{
+    position: fixed;
+    margin-bottom: 5px;
+    width: 70px;
+    height: 70px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 25px;
+    background: green;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    
+}
+.btn-wsp:hover{
+    text-decoration: none;
+    color: green;
+    background:white ;
+}
+
 h1 {
     display: flex;
     justify-content: center;
@@ -36,14 +59,14 @@ h1 {
 }
 
 h2 {
-    color: #fd1532;
+    color: black;
     font-family: 'Rampart One', cursive;
     text-shadow: 5px 5px 5px rgb(53, 53, 53);
     text-align: center;
 }
 
 h3 {
-    color: rgb(0, 110, 255);
+    color: black;
     font-family: 'Monoton', cursive;
     text-shadow: 5px 5px 5px rgb(158, 151, 151);
     text-align: center;
@@ -64,7 +87,8 @@ a {
 header {
     display: flex;
     justify-content: space-evenly;
-    background-image: linear-gradient(to left, red, blue);
+    /* background-image: linear-gradient(to left, red, blue); */
+    background-color: rgb(60, 170, 152) ;
     background-size: cover;
     background-position: center;
     width: auto;
@@ -133,9 +157,13 @@ header {
     }
 }
 
+.nav-link{
+    color: white;
+}
+
 @media only screen and (max-width:800px) {
     header {
-        background-color: aqua;
+        background-color: rgb(60, 170, 152);
     }
 
     .menu {
@@ -155,201 +183,182 @@ header {
 
 
 body {
-    background-color: black !important;
+    background-color: blanchedalmond;
     margin: 0;
+    background-image: cover;
 }
-
-/* CUERPO HOME */
-.section__tituloTiendaHome {
-    margin: 3rem 0;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    background-color: black;
-
-    .section__tituloTiendaHome--color {
-        color: white;
-    }
-
-    .proximamente {
-        display: flex;
-        flex-flow: column wrap;
-        background-color: #000;
-        justify-content: center;
-    }
-
-    img {
-        display: flex;
-        flex-wrap: wrap;
-        transition: 2s;
-
-    }
-
-    img:hover {
-        transform: rotatey(160deg);
-
-    }
-}
-
-.proximamente__cajasTienda {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5%;
-    border: 5px solid red;
-
-    .videoH {
-        width: 50%;
-        height: 20em;
-        margin: 4%;
-        border: 3px solid blue;
-
-    }
-}
-
-.proximamente__cajasTienda--color {
-    color: white;
-}
-
-.proximamente__cajasTienda--color1 {
-    color: yellow;
-}
-
-.proximamente__cajasTienda--color2 {
-    color: green;
-}
-
-.proximamente__cajasTienda--color3 {
-    color: red;
-}
-
-.proximamente__cajasTienda--color4 {
-    color: orange;
-}
-
-.proximamente__cajasTienda--color5 {
-    color: paleturquoise;
-}
-
-
-
-
-.ofertas__home--card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+/* HOME  */
+body{
+    height: 100%;
     width: 100%;
-    height: 95%;
-    padding-bottom: 1rem;
+}
 
-    .card {
-        width: 400px;
-        text-align: center;
+.tituloVenta{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(201, 200, 200);
+}
 
-        .card-text {
-            color: blue;
-        }
+.venta_consolas{
+    h3{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        color: black;
     }
 }
 
-/* condicionales ofertas */
-
-
-$stock:no;
-
-.ofertas__home {
-    @if $stock==si {
-        background-color: red;
-    }
-
-    @else if $stock==no {
-        background-color: blue;
-    }
-
-    .cero {
-        color: red;
-        text-align: center;
-    }
-}
-
-/* fin condicionales ofertas */
-/* bucles */
-.bucles {
+.venta_consolas-nintendo{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+    
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        width: 25em;
+        margin-bottom: 20px;
+        
 
+    }
+    
 }
 
-$base-color:rgb(131, 35, 35);
-
-@for $in from 1 to 4 {
-    .bucle-#{$in} {
-        width: 15rem;
-        border: red;
-        background-color: lighten($base-color, $in*10%);
-        text-align: center;
-        height: auto;
+.venta_consolas-ps4{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .card{
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        font-size: 20px;
+        flex-direction: column-reverse;
+        padding-top: 100px;
+        width: 25em;
+        margin-bottom: 20px;
+    }
+    
+}
 
-        i {
-            font-size: 30px;
+.venta_consolas-ps5{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        width: 25em;
+        margin-bottom: 20px;
+    }
+}
+
+.venta_consolas-xbox{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        width: 25em;
+        margin-bottom: 20px;
+    }
+}
+
+.venta_juegos{
+    h3{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        
+    }
+    background-image: linear-gradient(rgb(255, 168, 168),white);
+    .venta_juegos-NW{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        background-image: linear-gradient(rgb(255, 168, 168),white);
+        .card{
+            display: flex;
+            flex-direction: column-reverse;
+            padding-top: 50px;
+            width: 15em;
+            margin-bottom: 20px;
+            width: 20em;
+            height: 23em;
+        }
+    }
+    .venta_juegos-ps4{
+        background-image: linear-gradient(rgb(109, 109, 255),white);
+        .card_juegos-ps4{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        .card{
+            display: flex;
+            flex-direction: column-reverse;
+            padding-top: 50px;
+            margin-bottom: 20px;
+            width: 20em;
+            height: 29em;
         }
 
+        }
     }
-}
-
-.ps4-logo,
-.nw-logo {
-    height: 400px;
-    width: 500px;
-    border: 2px solid black;
-}
-
-@each $animal in ps4,
-nw,
-    {
-    .#{$animal}-logo {
-        background-image: url("./imagen/#{$animal}.png");
-        width: 200px;
-        height: 200px;
-        background-size: cover;
-        background-position: center;
-
+    .venta_juegos-ps5{
+        background-image: linear-gradient(rgb(255, 250, 185),white);
+        .card_juegos-ps5{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .card{
+            display: flex;
+            flex-direction: column-reverse;
+            padding-top: 50px;
+            margin-bottom: 20px;
+            width: 20em;
+            height: 35em;
+        }
+    
     }
+    
 }
 
-.novedades {
-    width: 5rem;
-    height: auto;
-}
 
-$redes: (red1: 200px,
-    red2: 200px,
-    red3: 450px);
-
-@each $red,
-$color in $redes {
-    .btn--#{$red} {
-        background-color: red;
-        width: $color;
-        height: 10rem;
-        border: white solid 2px;
-        text-align: center;
-
+.venta_accesorios-gaming{  
+    background-image: linear-gradient(rgb(168, 168, 168),white);
+    h3{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        
     }
+    
+    .venta_electronica{
+        display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+            
+            .rounded-circle{
+                display: flex;
+            flex-direction: column-reverse;
+            padding-top: 50px;
+            margin-bottom: 20px;
+            width: 15em;
+            height: 20em;
+            }
+    }
+
+    
+}
+.venta_electronica .rounded-circle:hover{
+    transform: scale(1.2);
+            transition: 0.7s;
 }
 
-.btn--red3 {
-    background-image: url(./imagen/x1.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-
+/* FIN HOME */
 /*pagina de Nintendo Switch*/
 
 @media only screen and (max-width:800px) {
@@ -395,30 +404,59 @@ $color in $redes {
 
 }
 
+.nintendo_venta{
+    background-color: rgb(228, 174, 174);
+    h3{
+        padding-top: 20px;
+    }
+
+}
 .cardH {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
     text-align: center;
+    
 
     .card {
         display: flex;
         justify-content: space-evenly;
         margin: 5%;
+        
     }
 
 }
 
-/* PS4 */
+/* juegos */
 
 .bodyPs4 {
     height: 100%;
     width: 100%;
 }
 
+.menuJuegos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    a{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 50%;
+        
+    }
+    a:hover{
+        
+        transition: 0.7s;
+        filter: sepia();
+    }
+}
+
 .fondoTiendaPs4 {
-    background-color: black;
+    background-color: rgb(190, 190, 190);
     padding-top: 10%;
     display: flex;
     flex-wrap: wrap;
@@ -428,8 +466,14 @@ $color in $redes {
         background-image: linear-gradient(to left, rgb(167, 160, 160), rgb(36, 36, 37));
         width: 90%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
         text-align: center;
+        padding: 10px;
+        .card{
+            margin: 10px;
+
+        }
     }
 }
 
@@ -531,7 +575,7 @@ $color in $redes {
 
 /*PAGINA PS5*/
 
-@media only screen and (max-width:800px) {
+/* @media only screen and (max-width:800px) {
     h1 {
         display: flex;
         justify-content: center;
@@ -554,17 +598,26 @@ $color in $redes {
 
     }
 
-}
-
-.ps5Portada {
-    background-color: black;
+} */
+.ps5{
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    background-color: black;
+    .ps5Portada {
+        display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+            img{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+        
+    
+    }
 
 }
+
 
 .fondoTiendaPs5 {
 
@@ -586,13 +639,236 @@ $color in $redes {
     }
 
 }
+/* --SECCION ---CONSOLAS */
+.venta_consolas-all{
+    h3{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        color: black;
+    }
+}
 
+.venta_consolas-nintendo{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        width: 25em;
+        margin-bottom: 20px;
+        
+
+    }
+    
+}
+
+.venta_consolas-ps4{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 100px;
+        width: 25em;
+        margin-bottom: 20px;
+    }
+    
+}
+
+.venta_consolas-ps5{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        width: 25em;
+        margin-bottom: 20px;
+    }
+}
+
+.venta_consolas-xbox{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        width: 25em;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+/* --FIN --CONSOLAS */
+
+/* --SECCION DE ACCESORIOS-- */
+
+
+
+.venta_accesorios{
+    background-color: rgb(255, 255, 255);
+    padding-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .venta_accesorios-auriculares{
+        background-image: linear-gradient(to left, rgb(167, 160, 160), rgb(36, 36, 37));
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 5em;
+        margin: 1em;
+        
+        .card{
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            margin: 20px;
+            width: 30%;
+            height: 25em;
+
+            
+            img{
+                height: 10em;
+            }
+        }
+    }
+    .venta_accesorios-camaras{
+        background-image: linear-gradient(to left, rgb(167, 160, 160), rgb(36, 36, 37));
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 5em;
+        margin: 1em;
+        
+        .card{
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            margin: 20px;
+            width: 30em;
+            height: 30em;
+
+            
+            img{
+                height: 15em;
+            }
+        }
+    }
+    .venta_accesorios-microfonos{
+        background-image: linear-gradient(to left, rgb(167, 160, 160), rgb(36, 36, 37));
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 5em;
+        margin: 1em;
+        
+        .card{
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            margin: 20px;
+            width: 35em;
+            height: 30em;
+
+            
+            img{
+                height: 15em;
+            }
+        }
+    }
+    .venta_accesorios-mouse{
+        background-image: linear-gradient(to left, rgb(167, 160, 160), rgb(36, 36, 37));
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 5em;
+        margin: 1em;
+        
+        .card{
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            margin: 30px;
+            width: 30em;
+            height: 30em;
+
+            
+            img{
+                height: 15em;
+            }
+        }
+    }
+    .venta_accesorios-parlantes{
+        background-image: linear-gradient(to left, rgb(167, 160, 160), rgb(36, 36, 37));
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 5em;
+        margin: 1em;
+        
+        .card{
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            margin: 30px;
+            width: 30em;
+            height: 30em;
+
+            
+            img{
+                height: 15em;
+            }
+            
+        }
+        
+    }
+}
+
+.venta_accesorios img:hover{
+    
+    transform: scale(1.3);
+    transition: 0.7s;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* --FIN --SECCION DE ACCESORIOS--*/
 /*SECTOR DE FOOTER*/
 .iconos {
     display: flex;
     justify-content: center;
     flex-direction: center;
     flex-wrap: wrap;
+    background-color:none;
 
     i {
         display: flex;
@@ -601,19 +877,65 @@ $color in $redes {
         color: white;
         font-size: 3rem;
         padding: 5%;
-        text-shadow: 5px 5px 5px rgb(170, 116, 35);
+        text-shadow: 5px 5px 5px rgb(0, 0, 0);
     }
 
 }
 
 
+
 .contenido {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to left, red, blue);
+    background-color: rgb(60, 170, 152) ;
     background-size: cover;
     justify-content: center;
     text-align: center;
+}
+hr{
+    width: 50%;
+    margin:auto;
+}
+
+
+.itemFooter {
+    
+    h2{color: black;
+    font-family: 'Rampart One', cursive;
+    text-shadow: 5px 5px 5px rgb(53, 53, 53);
+    text-align: center;
+    padding: 20px;
+    }
+    
+}
+
+.footer2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.formularioFooter{
+    width: auto;
+    h2{
+        padding-top: 20px;
+    }
+}
+
+.sobreNosotros{
+    width: 50%;
+    h2{
+        padding-top: 20px;
+        padding-bottom: 5em;
+    }
+    ul{
+        list-style: none;
+        padding: 2em;
+    }
+    p{
+        text-align: center;
+    }
 }
 
 
@@ -634,9 +956,9 @@ $color in $redes {
         border-style: solid;
         border-width: 1px;
         border-color: #292728;
-        margin-top: 10px;
+        margin-top: 2px;
         padding-left: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 2px;
     }
 
     textarea {
@@ -647,10 +969,10 @@ $color in $redes {
         border-style: solid;
         border-width: 1px;
         border-color: black;
-        margin-top: 10px;
+        margin-top: 2px;
         padding-left: 10px;
-        margin-bottom: 20px;
-        padding-top: 15px;
+        margin-bottom: 2px;
+        padding-top: 1px;
     }
 
     label {
@@ -662,10 +984,10 @@ $color in $redes {
         height: 45px;
         padding-left: 5px;
         padding-right: 5px;
-        margin-bottom: 20px;
-        margin-top: 10px;
+        margin-bottom: 2px;
+        margin-top: 1px;
         text-transform: uppercase;
-        background-color: #ff0000;
+        background-color: black;
         border-color: #d4a1a1;
         border-style: solid;
         border-radius: 10px;
