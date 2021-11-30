@@ -728,8 +728,8 @@ body{
         justify-content: space-around;
         flex-wrap: wrap;
         text-align: center;
-        padding: 5em;
-        margin: 1em;
+        padding: 10px;
+        margin: 10px;
         
         .card{
             display: flex;
@@ -752,8 +752,8 @@ body{
         justify-content: space-around;
         flex-wrap: wrap;
         text-align: center;
-        padding: 5em;
-        margin: 1em;
+        padding: 10px;
+        margin: 10px;
         
         .card{
             display: flex;
@@ -762,6 +762,7 @@ body{
             margin: 20px;
             width: 30em;
             height: 30em;
+            text-align: center;
 
             
             img{
@@ -776,8 +777,8 @@ body{
         justify-content: space-around;
         flex-wrap: wrap;
         text-align: center;
-        padding: 5em;
-        margin: 1em;
+        padding: 10px;
+        margin: 10px;
         
         .card{
             display: flex;
@@ -800,8 +801,8 @@ body{
         justify-content: space-around;
         flex-wrap: wrap;
         text-align: center;
-        padding: 5em;
-        margin: 1em;
+        padding: 10px;
+        margin: 10px;
         
         .card{
             display: flex;
@@ -824,8 +825,8 @@ body{
         justify-content: space-around;
         flex-wrap: wrap;
         text-align: center;
-        padding: 5em;
-        margin: 1em;
+        padding: 10px;
+        margin: 10px;
         
         .card{
             display: flex;
@@ -842,6 +843,31 @@ body{
             
         }
         
+    }
+    .venta_accesorios-teclados {
+        background-image: linear-gradient(to left, rgb(167, 160, 160), rgb(36, 36, 37));
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        
+        .card{
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            margin: 30px;
+            width: 30em;
+            height: 30em;
+
+            
+            img{
+                height: 15em;
+            }
+            
+        }
     }
 }
 
