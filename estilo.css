@@ -93,7 +93,7 @@ h3 {
 a {
   font-family: 'Press Start 2P', cursive;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 header {
@@ -104,11 +104,26 @@ header {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   /* background-image: linear-gradient(to left, red, blue); */
-  background-color: #3caa98;
+  background-color: black;
   background-size: cover;
   background-position: center;
   width: auto;
   height: 100%;
+}
+
+header .navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: 50%/100% 100% no-repeat;
+  color: white;
+}
+
+header .navbar-light .navbar-toggler {
+  color: white;
+  border-color: white;
 }
 
 header .navbar-nav {
@@ -166,33 +181,22 @@ header ul li {
   position: relative;
   margin: 3%;
   margin-top: 10%;
-}
-
-header ul ul {
-  position: absolute;
   color: white;
-  display: none;
 }
 
-header ul ul li a {
-  font-size: 1rem;
+header ul li a {
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
   color: white;
-  -webkit-transition: none;
-  transition: none;
 }
 
-header ul li:hover ul {
-  color: white;
-  display: inline-block;
-}
-
-.nav-link {
+header .navbar-light .navbar-nav .nav-link {
   color: white;
 }
 
 @media only screen and (max-width: 800px) {
   header {
-    background-color: #3caa98;
+    background-color: black;
   }
   .menu {
     display: -webkit-box;
@@ -958,6 +962,12 @@ body {
   height: 30em;
 }
 
+.venta_accesorios .venta_accesorios-auriculares .card .modal-body {
+  position: relative;
+  padding: 1rem;
+  text-align: left;
+}
+
 .venta_accesorios .venta_accesorios-auriculares .card img {
   height: 10em;
 }
@@ -991,6 +1001,12 @@ body {
   width: 30em;
   height: 30em;
   text-align: center;
+}
+
+.venta_accesorios .venta_accesorios-camaras .card .modal-body {
+  position: relative;
+  padding: 1rem;
+  text-align: left;
 }
 
 .venta_accesorios .venta_accesorios-camaras .card img {
@@ -1027,6 +1043,12 @@ body {
   height: 30em;
 }
 
+.venta_accesorios .venta_accesorios-microfonos .card .modal-body {
+  position: relative;
+  padding: 1rem;
+  text-align: left;
+}
+
 .venta_accesorios .venta_accesorios-microfonos .card img {
   height: 15em;
 }
@@ -1059,6 +1081,12 @@ body {
   margin: 20px;
   width: 35em;
   height: 32em;
+}
+
+.venta_accesorios .venta_accesorios-mouse .card .modal-body {
+  position: relative;
+  padding: 1rem;
+  text-align: left;
 }
 
 .venta_accesorios .venta_accesorios-mouse .card img {
@@ -1095,6 +1123,12 @@ body {
   height: 30em;
 }
 
+.venta_accesorios .venta_accesorios-parlantes .card .modal-body {
+  position: relative;
+  padding: 1rem;
+  text-align: left;
+}
+
 .venta_accesorios .venta_accesorios-parlantes .card img {
   height: 15em;
 }
@@ -1127,6 +1161,12 @@ body {
   margin: 30px;
   width: 30em;
   height: 30em;
+}
+
+.venta_accesorios .venta_accesorios-teclados .card .modal-body {
+  position: relative;
+  padding: 1rem;
+  text-align: left;
 }
 
 .venta_accesorios .venta_accesorios-teclados .card img {
@@ -1169,7 +1209,7 @@ body {
   color: white;
   font-size: 3rem;
   padding: 5%;
-  text-shadow: 5px 5px 5px black;
+  text-shadow: 5px 5px 5px #bbbaba;
 }
 
 .contenido {
@@ -1180,7 +1220,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #3caa98;
+  background-color: black;
   background-size: cover;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1194,9 +1234,9 @@ hr {
 }
 
 .itemFooter h2 {
-  color: black;
+  color: white;
   font-family: 'Rampart One', cursive;
-  text-shadow: 5px 5px 5px #353535;
+  text-shadow: 5px 5px 5px #ececec;
   text-align: center;
   padding: 20px;
 }
@@ -1218,6 +1258,8 @@ hr {
 
 .formularioFooter h2 {
   padding-top: 20px;
+  color: white;
+  text-shadow: 5px 5px 5px #ececec;
 }
 
 .sobreNosotros {
@@ -1227,15 +1269,19 @@ hr {
 .sobreNosotros h2 {
   padding-top: 20px;
   padding-bottom: 5em;
+  color: white;
+  text-shadow: 5px 5px 5px #ececec;
 }
 
 .sobreNosotros ul {
   list-style: none;
   padding: 2em;
+  color: white;
 }
 
 .sobreNosotros p {
   text-align: center;
+  color: white;
 }
 
 .contact_form {

@@ -80,7 +80,7 @@ h3 {
 a {
     font-family: 'Press Start 2P', cursive;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -88,11 +88,26 @@ header {
     display: flex;
     justify-content: space-evenly;
     /* background-image: linear-gradient(to left, red, blue); */
-    background-color: rgb(60, 170, 152) ;
+    background-color: rgb(0, 0, 0) ;
     background-size: cover;
     background-position: center;
     width: auto;
     height: 100%;
+
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        content: "";
+        background: 50%/100% 100% no-repeat;
+        color: white;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+    }
 
     .navbar-nav {
         display: flex;
@@ -121,6 +136,7 @@ header {
     ul {
         margin-right: 30px;
         transition: transform(1s);
+        
     }
 
     ul :hover {
@@ -128,7 +144,7 @@ header {
     }
 
     nav a:hover {
-        color: green
+        color: green;
     }
 
     ul li {
@@ -136,34 +152,21 @@ header {
         position: relative;
         margin: 3%;
         margin-top: 10%;
-    }
-
-
-    ul ul {
-        position: absolute;
         color: white;
-        display: none;
+        a {
+            font-family: 'Press Start 2P', cursive;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
     }
-
-    ul ul li a {
-        font-size: 1rem;
-        color: white;
-        transition: none;
+    .navbar-light .navbar-nav .nav-link {
+        color: rgb(255, 255, 255);
     }
-
-    ul li:hover ul {
-        color: white;
-        display: inline-block;
-    }
-}
-
-.nav-link{
-    color: white;
 }
 
 @media only screen and (max-width:800px) {
     header {
-        background-color: rgb(60, 170, 152);
+        background-color: rgb(0, 0, 0);
     }
 
     .menu {
@@ -738,7 +741,12 @@ body{
             margin: 20px;
             width: 30em;
             height: 30em;
-
+            .modal-body {
+                position: relative;
+                padding: 1rem;
+                text-align:left;
+                
+            }
             
             img{
                 height: 10em;
@@ -763,6 +771,12 @@ body{
             width: 30em;
             height: 30em;
             text-align: center;
+            .modal-body {
+                position: relative;
+                padding: 1rem;
+                text-align:left;
+                
+            }
 
             
             img{
@@ -787,6 +801,12 @@ body{
             margin: 20px;
             width: 35em;
             height: 30em;
+            .modal-body {
+                position: relative;
+                padding: 1rem;
+                text-align:left;
+                
+            }
 
             
             img{
@@ -811,6 +831,12 @@ body{
             margin: 20px;
             width: 35em;
             height: 32em;
+            .modal-body {
+                position: relative;
+                padding: 1rem;
+                text-align:left;
+                
+            }
 
             
             img{
@@ -835,6 +861,12 @@ body{
             margin: 20px;
             width: 30em;
             height: 30em;
+            .modal-body {
+                position: relative;
+                padding: 1rem;
+                text-align:left;
+                
+            }
 
             
             img{
@@ -861,6 +893,12 @@ body{
             margin: 30px;
             width: 30em;
             height: 30em;
+            .modal-body {
+                position: relative;
+                padding: 1rem;
+                text-align:left;
+                
+            }
 
             
             img{
@@ -903,7 +941,7 @@ body{
         color: white;
         font-size: 3rem;
         padding: 5%;
-        text-shadow: 5px 5px 5px rgb(0, 0, 0);
+        text-shadow: 5px 5px 5px rgb(187, 186, 186);
     }
 
 }
@@ -913,7 +951,7 @@ body{
 .contenido {
     display: flex;
     flex-direction: column;
-    background-color: rgb(60, 170, 152) ;
+    background-color: rgb(0, 0, 0) ;
     background-size: cover;
     justify-content: center;
     text-align: center;
@@ -926,9 +964,9 @@ hr{
 
 .itemFooter {
     
-    h2{color: black;
+    h2{color: rgb(255, 255, 255);
     font-family: 'Rampart One', cursive;
-    text-shadow: 5px 5px 5px rgb(53, 53, 53);
+    text-shadow: 5px 5px 5px rgb(236, 236, 236);
     text-align: center;
     padding: 20px;
     }
@@ -944,8 +982,11 @@ hr{
 }
 .formularioFooter{
     width: auto;
+    
     h2{
         padding-top: 20px;
+        color: white;
+        text-shadow: 5px 5px 5px rgb(236, 236, 236);
     }
 }
 
@@ -954,13 +995,17 @@ hr{
     h2{
         padding-top: 20px;
         padding-bottom: 5em;
+        color: white;
+        text-shadow: 5px 5px 5px rgb(236, 236, 236);
     }
     ul{
         list-style: none;
         padding: 2em;
+        color: white;
     }
     p{
         text-align: center;
+        color: white;
     }
 }
 
