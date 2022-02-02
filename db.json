@@ -1,0 +1,54 @@
+{
+  [
+    { "id": 1, 
+     "Marca": "Chevrolet", 
+     "precio": 5000  , 
+     "puertas": 5 , 
+     "color": "Azul"
+    },
+  
+    { "id": 2, 
+     "Marca": "Logan", 
+     "precio": 4000 , 
+     "puertas": 5 ,
+     "color": "Negro"
+    },
+  
+    { "id": 3, 
+     "Marca": "Nissan", 
+     "precio": 5000  , 
+     "puertas": 3 , 
+     "color": "Marron"
+    },
+  
+    { "id": 4, 
+     "Marca": "Mercedes", 
+     "precio": 100000  , 
+     "puertas": 3 , 
+     "color": "Rojo"
+    },
+  
+    { "id": 5, 
+     "Marca": "Fiat", 
+     "precio": 3000 , 
+     "puertas": 5 ,
+     "color": "Blanco"
+    },
+  
+    { "id": 6, 
+     "Marca": "hyudai", 
+     "precio": 6000  , 
+     "puertas": 5 ,
+     "color": "Negro"
+    },
+  
+    { "id": 7, 
+     "Marca": "Ferrari", 
+     "precio": 200000 , 
+     "puertas": 3,  
+     "color": "Amarillo"
+    }
+  
+  ]
+}
+
